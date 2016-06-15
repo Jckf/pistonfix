@@ -2,7 +2,8 @@
 
 Behavior of the BlockPistonRetractEvent was changed when Spigot updated
 CraftBukkit to Minecraft 1.8. This new behavior can be very confusing, and
-outright breaks existing plugins.
+outright breaks existing plugins. See
+[SPIGOT-117](https://hub.spigotmc.org/jira/browse/SPIGOT-117).
 
 The problem is an additional trigger of BlockPistonRetractEvent for non-sticky
 pistons, causing plugins to see the same piston retract twice in a row. This
